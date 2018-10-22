@@ -36,10 +36,8 @@ class Template
                     <div class="container">
                         <div class="row">
                             <div class="col sn-12">
-                                <h1 class="display-3"> ADOGCATME</h1>
+                                <a href="<?php echo URL?>" class="text-white"><h1 class="display-3 text-white"> ADOGCATME</h1></a>
                                 <p>No compres mejor adopta</p>
-
-
                             </div>
 
                         </div>
@@ -49,7 +47,7 @@ class Template
             </section>
 
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="#">Bienvenido</a>
+            <a class="navbar-brand" href="<?php echo URL?>">Bienvenido</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -58,7 +56,7 @@ class Template
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="<?php echo URL?>inicio" class="black-text">Inicio</a>
+                        <a class="nav-link" href="<?php echo URL?>" class="black-text">Inicio</a>
 
 
                     </li>
@@ -81,8 +79,8 @@ class Template
                     </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+                    <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0 text-white" type="submit">Buscar</button>
                 </form>
             </div>
         </nav>

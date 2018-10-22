@@ -26,7 +26,7 @@ class Request
                 $ruta = explode("/", $ruta);
                 $ruta = array_filter($ruta);
                 //print_r($ruta); //sirve para imprimir arreglos
-                if ($ruta[0] == "Quienessomos.php") {
+                if ($ruta[0] == "quienessomos.php") {
                     $this->controlador = "empleado_bienvenido";
                 } else {
                     $this->controlador = strtolower(array_shift($ruta));

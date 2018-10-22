@@ -8,10 +8,10 @@ img{
 }
 #cover
 {
-	background: #2c2c2c url('../img/portada.jpg')center center no-repeat;
+	background: #2c2c2c url('../../Public/imagenes/portada.jpg')center center no-repeat;
 	background-size:cover;
 	color: white;
-	height: 100%,
+	height: 100%;
 	text-aling: center;
 	display: flex;
 	align-items:center;
@@ -28,16 +28,16 @@ img{
 	padding: 5rem 0;
 }
 .contenido-seccion{
-	background: url('../img/tigre.jpg')center center no-repeat;
+	background: url('../../Public/imagenes/tigre.jpg')center center no-repeat;
 	background-size: cover;
 }
 .lead{
 	color: white;
 }
 
-}
+
 #contenido-nota{
-	background: url('../img/gato.jpg')center center no-repeat;
+	background: url('../../Public/imagenes/cat.jpg')center center no-repeat;
 	background-size: cover;
     display: flex;
 }
@@ -45,7 +45,7 @@ img{
 .texto-acerca{
 background: rgba(0,0,0,0.8);
 	color: #ffffff;
-	padding: 1.875rem	
+	padding: 1.875rem;
 }
 #footer{
 	background: #121212;

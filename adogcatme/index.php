@@ -6,7 +6,7 @@
 
 
 
-    define('URL',"http://localhost/adogcatme/");
+    define('URL',"http://localhost/aplicaciones-web/adogcatme/");
 
 
 
