@@ -1,3 +1,5 @@
+<br>
+<br>
 <div class="container center">
     <div>
         <h5 class="red-text">
@@ -38,6 +40,8 @@
         </form>
     </div>
 </div>
+<br>
+<br>
 
 <script type="text/javascript">
     $(document).ready(function(){

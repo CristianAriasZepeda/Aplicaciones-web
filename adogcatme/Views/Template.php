@@ -25,9 +25,11 @@ class Template
             <link type="text/css" rel="stylesheet" href="<?php echo URL?>Public/css/bootstrap-grid.min.css.map"  media="screen,projection"/>
             <link rel="stylesheet" href="<?php echo URL?>Public/css/bootstrap.css">
             <link rel="stylesheet" href="<?php echo URL?>Public/css/estilos.css">
+            <link rel="stylesheet" href="<?php echo URL?>Public/css/sweetalert.css">
 
             <script src="<?php echo URL?>Public/js/jquery.min.js"></script>
             <script src="<?php echo URL?>Public/js/bootstrap.min.js"></script>
+            <script src="<?php echo URL?>Public/js/sweetalert.min.js" type="text/javascript"></script>
         </head>
 
         <body>
