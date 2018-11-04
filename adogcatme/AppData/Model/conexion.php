@@ -14,20 +14,20 @@ class conexion
 
     function __construct()
     {
-        $this->conexion=new \mysqli($this->datos["server"],$this->datos["user"], $this->datos["password"],$this->datos["base"]);
+        $this->conexion=new \mysqli($this->datos["server"],$this->datos["user"],
+            $this->datos["password"],$this->datos["base"]);
         $this->conexion->set_charset("utf8");
     }
 
-    public function QuerySimple($sql)
+    public function querysimple($sql)
     {
         $this->conexion->query($sql) or die (mysqli_error($this->conexion));
     }
-    public function QueryResultado($sql)
+    public function queryResultados($sql)
     {
         $datos=$this->conexion->query($sql) or die (mysqli_error($this->conexion));
         return $datos;
     }
-
     public function __destruct()
     {
         $this->conexion->close();

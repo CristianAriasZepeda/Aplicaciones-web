@@ -38,7 +38,7 @@ class Template
                     <div class="container">
                         <div class="row">
                             <div class="col sn-12">
-                                <a href="<?php echo URL?>" class="text-white"><h1 class="display-3 text-white"> ADOGCATME</h1></a>
+                                <a" class="text-white"><h1 class="display-3 text-white"> ADOGCATME</h1></a>
                                 <p>No compres mejor adopta</p>
                             </div>
 
@@ -49,11 +49,7 @@ class Template
             </section>
 
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="<?php echo URL?>">Bienvenido</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+            
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
@@ -86,7 +82,7 @@ class Template
                 </form>
             </div>
         </nav>
-
+    <div class="container-fluid ">
 
 
 
@@ -97,7 +93,7 @@ class Template
     public static function footer()
     {
         ?>
-
+        </div>
         <footer id="footer">
             <div class="container ">
                 <div class="row">

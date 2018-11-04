@@ -13,6 +13,7 @@ class quienessomosController
 {
     public function index()
     {
+
     }
 
     public function crear(){

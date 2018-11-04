@@ -1,4 +1,6 @@
 
+<br>
+<br>
 <section id="nota">
     <div class="contenido-nota">
         <div class="container">
@@ -26,5 +28,7 @@
         </div>
     </div>
 </section>
+<br>
+<br>
 
 
