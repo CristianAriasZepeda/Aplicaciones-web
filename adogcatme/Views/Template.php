@@ -49,7 +49,7 @@ class Template
             </section>
 
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            
+
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
@@ -82,7 +82,7 @@ class Template
                 </form>
             </div>
         </nav>
-    <div class="container-fluid ">
+    <div class="clearfix">
 
 
 

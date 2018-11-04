@@ -22,9 +22,6 @@ class listaController
         $datos=$this->animal->get();
         return $datos;
     }
-    public function crear()
-    {
 
-    }
 
 }

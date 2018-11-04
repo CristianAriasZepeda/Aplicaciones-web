@@ -4,7 +4,7 @@ $row=mysqli_fetch_array($datos);
 <h1 class="center">Modificar</h1>
 <div class="row">
     <div class="col l6 m6 s6 offset-l3">
-        <form action="<?php echo URL?>sexos/update" method="post" enctype="multipart/form-data">
+        <form action="<?php echo URL?>sexo/update" method="post" enctype="multipart/form-data">
             <label for="">Sexo</label>
             <input type="hidden" name="id_sexo" value="<?php echo $row[0]?>">
             <input type="text" name="sexo_des" value="<?php echo $row[1]?>">

@@ -27,7 +27,7 @@ class sexo
     }
     function add()
     {
-        $sql="insert into sexo values('0','{$this->sexo_des}')";
+        $sql="insert into sexos values('0','{$this->sexo_des}')";
         $this->conexion->querysimple($sql);
     }
 

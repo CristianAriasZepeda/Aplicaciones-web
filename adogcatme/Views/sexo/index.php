@@ -6,8 +6,6 @@ $msg=isset($_GET['msg'])?"Se Guardo Exitosamente":"";
 echo "<h3 class='center green-text'>{$msg}</h3>";
 
 ?>
-
-<a id="btn_agregar_eh" href="#!" class="btn red white-text">Crear</a>
 <table id="tabla1">
     <tr>
         <th>Id</th>
@@ -18,7 +16,7 @@ echo "<h3 class='center green-text'>{$msg}</h3>";
     $cont=1;
     while($row=mysqli_fetch_array($datos))
     {
-        echo "<tr><td>{$cont}</td><td>{$row['sexo']}</td>
+        echo "<tr><td>{$cont}</td><td>{$row['sexo_des']}</td>
         <td><a href='".URL."sexo/modificar/{$row[0]}' class='btn'><i class='material-icons'>edit</i></a></td>
         <td><a href='".URL."sexo/eliminar/{$row[0]}' class='btn tooltipped' data-position='bottom' data-tooltip='Eliminar'><i class='material-icons'>delete</i></a></td></tr>";
         $cont++;
