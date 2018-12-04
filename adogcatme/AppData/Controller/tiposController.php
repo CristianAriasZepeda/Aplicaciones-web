@@ -1,56 +1,96 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: JAZMIN
- * Date: 10/05/2018
- * Time: 01:12 PM
- */
-
 namespace AppData\Controller;
-
+use AppData\Model\especies;
+use AppData\Model\razas;
+use AppData\Model\sexo;
 
 class tiposController
 {
-    private $tipos;
+    private $tipos,$raza, $sexo,  $especie;
     public function __construct()
     {
-        $this->tipos=new \AppData\Model\tipos();
-    }
+        $this->tipos= new \AppData\Model\tipos();
+        $this->raza=new \AppData\Model\razas();
+        $this->sexo=new \AppData\Model\sexo();
+        $this->especie=new \AppData\Model\especies();
 
+    }
     public function index()
     {
-        $datos= $this->tipos->getAll();
+        $datos1=$this->raza->getAll();
+        $datos2=$this->sexo->getAll();
+        $datos3=$this->especie->getAll();
+        $datos4=$this->tipos->getAll();
+        $datos[0]=$datos1;
+        $datos[1]=$datos2;
+        $datos[2]=$datos3;
+        $datos[3]=$datos4;
         return $datos;
-       // echo "Hola desde mi controlador";
+
     }
-    public function crear()
-    {
+    public function agregar(){
+
         if($_POST)
         {
-            $this->tipos->set("tipo_des",$_POST['tipo_des']);
+            $nombre=$_FILES['imagen']['name'];
+            $tmp=$_FILES['imagen']['tmp_name'];
+            $bytes=file_get_contents($tmp);
+            $this->tipos->set('nombre',$_POST["nombre"]);
+            $this->tipos->set('edad',$_POST["edad"]);
+            $this->tipos->set('color',$_POST["color"]);
+            $this->tipos->set('id_raza',$_POST["id_raza"]);
+            $this->tipos->set('id_sexo',$_POST["id_sexo"]);
+            $this->tipos->set('id_especie',$_POST["id_especie"]);
+            $this->tipos->set('img',$bytes);
             $this->tipos->add();
-            header("Location:".URL."tipos?msg=ok");
+            print_r($_POST);
+            header("Location:".URL."tipos");
+        }else{
+
+        $datos1=$this->raza->getAll();
+        $datos2=$this->sexo->getAll();
+        $datos3=$this->especie->getAll();
+        $datos4=$this->tipos->getAll();
+        $datos[0]=$datos1;
+        $datos[1]=$datos2;
+        $datos[2]=$datos3;
+        $datos[3]=$datos4;
+        return $datos;
         }
     }
-    public function eliminar($id){
-          //print_r($id);
+
+
+      public function eliminar($id){
        $this->tipos->delete($id[0]);
        header("Location:".URL."tipos");
     }
+
     public function modificar($id){
-        //print_r($id);
-        $datos=$this->tipos->edit($id[0]);
+        $datos=$this->tipos->edit($id[0]);        
         return $datos;
     }
-    public function update($id){
-        //print_r($id);
-        $this->tipos->set("id_tipo",$_POST['id_tipo']);
-        $this->tipos->set("tipo_des",$_POST['tipo_des']);
-        $this->tipos->update();
-        header("Location:".URL."tipos");
-
+    public function actualizar($id)
+    {
+        if($_POST)
+        {
+            $nombre=$_FILES['imagen']['name'];
+            $tmp=$_FILES['imagen']['tmp_name'];
+            $bytes=file_get_contents($tmp);
+            $this->tipos->set('nombre',$_POST["nombre"]);
+            $this->tipos->set('edad',$_POST["edad"]);
+            $this->tipos->set('color',$_POST["color"]);
+            $this->tipos->set('id_raza',$_POST["id_raza"]);
+            $this->tipos->set('id_sexo',$_POST["id_sexo"]);
+            $this->tipos->set('id_especie',$_POST["id_especie"]);
+            $this->tipos->set('img',$bytes);
+            $this->tipos->add();
+            print_r($_POST);
+            header("Location:".URL."tipos");
+        }
+    }
+    public function print_pdf()
+    {
+        $datos=$this->tipos->getAll();
+        return $datos;
     }
 }
-
-
-

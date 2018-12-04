@@ -28,6 +28,39 @@ class conexion
         $datos=$this->conexion->query($sql) or die (mysqli_error($this->conexion));
         return $datos;
     }
+
+    public function proc($a,$b,$c,$d,$e,$f,$g)
+    {
+        $sql="insert into animal(nombre,edad,color,id_raza,id_sexo,id_especie,img) values(?,?,?,?,?,?,?)";
+        $stm=$this->conexion->prepare($sql) or die (mysqli_error($this->conexion));
+        $stm->bind_param('sssssss',$a,$b,$c,$d,$e,$f,$g);
+        $stm->execute();
+
+    }
+    public function tiposadd($c,$d)
+    {
+        $sql = "insert into {$this->tabla} values('0','{$this->nombre}',
+         '{$this->edad}','{$this->color}','{$this->id_raza}','{$this->id_sexo}','{$this->id_especie}','{$this->id_img}')";
+        $this->conexion->QuerySimple($sql);
+
+        }
+    public function proc2($a,$b,$c,$d,$e)
+    {
+        $sql="update img set titulo=?,fecha=?, img=?, descr=? where id=?";
+        $stm=$this->conexion->prepare($sql) or die (mysqli_error($this->conexion));
+        $stm->bind_param('sssss',$a,$b,$c,$d,$e);
+        $stm->execute();
+
+    }
+    public function tiposup($a,$b,$c,$d,$e,$f,$g,$h)
+    {
+        $sql="update animal set nombre=?, edad=?, color=?, id_raza=?, id_sexo=?. id_especie=?,  img=? where id_animal=?";
+        $stm=$this->conexion->prepare($sql) or die (mysqli_error($this->conexion));
+        $stm->bind_param('ssssssss',$a,$b,$c,$d,$e,$f,$g,$h);
+        $stm->execute();
+
+    }
+
     public function __destruct()
     {
         $this->conexion->close();

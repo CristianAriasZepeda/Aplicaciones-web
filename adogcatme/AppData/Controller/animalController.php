@@ -6,12 +6,12 @@ use AppData\Model\sexo;
 use AppData\Model\tipos;
 
 class animalController{
-		private $animal, $raza, $sexo, $tipo, $especie;
+		private $animal, $raza, $sexo,  $especie, $img;
+    private $tipos;
 		function __construct(){
 		    $this->animal=new animal();
             $this->raza=new razas();
             $this->sexo=new sexo();
-            $this->tipo=new tipos();
             $this->especie=new especies();
 		}
 
@@ -20,11 +20,36 @@ class animalController{
 			$datos[0]=$this->animal->getAnimal();
 			$datos[1]=$this->raza->getAll();
             $datos[2]=$this->sexo->getAll();
-            $datos[3]=$this->tipo->getAll();
             $datos[4]=$this->especie->getAll();
+            $datos1=$this->animal->getAll();
+            $datos[0]=$datos1;
 
             return $datos;
 		}
+
+    public function agregar()
+    {
+        if($_POST)
+        {
+            $this->animal->set('id',$_POST["id"]);
+            $this->animal->set("nombre",$_POST['nombre']);
+            $this->animal->set("edad",$_POST['edad']);
+            $this->animal->set("color",$_POST['color']);
+            $this->animal->set("raza",$_POST['id_raza']);
+            $this->animal->set("sexo",$_POST['id_sexo']);
+            $this->animal->set("especie",$_POST['id_especie']);
+
+
+            $nombre=$_FILES['imagen']['name'];
+            $tmp=$_FILES['imagen']['tmp_name'];
+            //echo $nombre.'  '.$tmp ;
+            $bytes=file_get_contents($tmp);
+            $this->animal->set('img',$bytes);
+            $this->animal->add();
+            header("Location:".URL."animal");
+        }
+
+    }
 
 		function eliminar($id){
 			$this->animal->set("id",$id);
@@ -54,25 +79,29 @@ class animalController{
 			echo json_encode($datos);
 		}
 		function edit(){
-			$data=$_POST['arreglo'];
-			$this->animal->set("id",$data[0]['value']);
-			$this->animal->set("nombre",$data[1]['value']);
-			$this->animal->set("edad",$data[2]['value']);
-			$this->animal->set("color",$data[3]['value']);
-            $this->animal->set("raza_des",$data[4]['value']);
-            $this->animal->set("sexo_des",$data[5]['value']);
-            $this->animal->set("tipo_des",$data[6]['value']);
-            $this->animal->set("especies_des",$data[7]['value']);
-			$this->animal->updatePer();
-			?>
-			<script type="text/javascript">
-				
-			</script>
-			<?php
+		    echo("nombre");
+			//$data=$_POST['arreglo'];
+            $this->animal->set('id',$_POST["id"]);
+            $this->animal->set("nombre",$_POST['nombre']);
+            $this->animal->set("edad",$_POST['edad']);
+            $this->animal->set("color",$_POST['color']);
+            $this->animal->set("raza",$_POST['id_raza']);
+            $this->animal->set("sexo",$_POST['id_sexo']);
+            $this->animal->set("especie",$_POST['id_especie']);
+            			$this->animal->updatePer();
+
 		}
 
 		function __destruct(){
 
 		}
+
+    public function print_pdf()
+    {
+        $datos=$this->animal->getAll();
+        return $datos;
+    }
 	}
+
+
 ?>

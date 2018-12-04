@@ -11,8 +11,8 @@
             <th scope="col">Color</th>
             <th scope="col">Raza</th>
             <th scope="col">Sexo</th>
-            <th scope="col">Tipo</th>
             <th scope="col">Especie</th>
+            <th scope="col">Imagen</th>
           <th scope="col"></th>
           <th scope="col"></th>
           <th scope="col">Editar</th>
@@ -29,8 +29,8 @@
             <td scope="col"><?php echo $fila['color']." "?></td>
             <td scope="col"><?php echo $fila['raza_des']." " ?></td>
             <td scope="col"><?php echo $fila['sexo_des']." " ?></td>
-            <td scope="col"><?php echo $fila['tipo_des']." " ?></td>
-            <td scope="col"><?php echo $fila['especies_des'] ?></td>
+            <td scope="col"><?php echo $fila['especies_des']." " ?></td>
+            <td scope="col"><?php echo $fila['img']." " ?></td>
             <td scope="col"></td>
 
           <td scope="col"></td>
@@ -56,8 +56,9 @@
       </div>
       <div class="modal-body">
         <form class="form-signin" action="" method="post" id="actualizacion">
-          <input type="text" hidden name="id" id="id" value="">
+          <input type="hidden" name="id" id="id">
           <div class="form-group">
+            <input type="hidden" class="form-control" id="id" name="id" value="2">
             <input type="text" class="form-control"
               id="nombre" name="nombre"></input>
             <label for="nombre">Nombre</label>
@@ -73,48 +74,49 @@
               <label for="color">Color</label>
           </div>
 
+            <div class="form-group">
+                <select id="id_raza" type="text" name="id_raza">
+                    <option disabled selected>Selecciona Raza</option>
+                    <?php
+                    $result3=$datos[1];
+                    while ($row=mysqli_fetch_array($result3))
+                        echo "<option value='{$row['id_raza']}'>{$row[1]}</option>";
+                    echo $row[0];
+                    ?>
+                </select>
+            </div>
 
-            <select name="combo1" id="combo1">
-                <option value="" disabled>selecciona raza</option>
-                <?php
-                while ($fila=mysqli_fetch_assoc($datos[1])) {
-                    echo "<option value='{$fila['id_raza']}'>{$fila['raza_des']}</option>";
-                }
-            ?>
-            </select>
 
-            <select name="combo2" id="combo2">
-                <option value="" disabled>selecciona sexo</option>
+            <div class="form-group">
+                <select id="id_sexo" type="text" name="id_sexo">
+                <option disabled selected>Selecciona sexo</option>
                 <?php
-                while ($fila=mysqli_fetch_assoc($datos[2])) {
-                    echo "<option value='{$fila['id_sexo']}'>{$fila['sexo_des']}</option>";
-                }
+                $result3=$datos[2];
+                while ($row=mysqli_fetch_array($result3))
+                    echo "<option value='{$row['id_sexo']}'>{$row[1]}</option>";
+                echo $row[0];
                 ?>
-            </select>
+                </select>
+            </div>
 
-            <select name="combo3" id="combo3">
-                <option value="" disabled>selecciona tipo</option>
-                <?php
-                while ($fila=mysqli_fetch_assoc($datos[3])) {
-                    echo "<option value='{$fila['id_tipo']}'>{$fila['tipo_des']}</option>";
-                }
-                ?>
-            </select>
+            <div class="form-group">
+                <select id="id_especie" type="text" name="id_especie">
+                    <option value="" disabled>Selecciona especie</option>
+                    <?php
+                    $result3=$datos[4];
+                    while ($row=mysqli_fetch_array($result3))
+                        echo "<option value='{$row['id_especie']}'>{$row[1]}</option>";
+                    echo $row[0];
+                    ?>
+                </select>
+            </div>
 
-            <select name="combo4" id="combo4">
-                <option value="" disabled>selecciona especie</option>
-                <?php
-                while ($fila=mysqli_fetch_assoc($datos[4])) {
-                    echo "<option value='{$fila['id_especie']}'>{$fila['especies_des']}</option>";
-                }
-                ?>
-            </select>
 
         </form>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-success actualiza"
-          data-dismiss="modal">Actualizar</button>
+        <button type="button" class="btn btn-success actualiza "
+          >Actualizar</button>
       </div>
     </div>
   </div>
@@ -126,22 +128,21 @@
       $.post("<?php echo URL ?>animal/get/"+id,{},function(data){
         if(data){
           data=JSON.parse(data)
-          $("#id").val(data['id_animal'])
+          ///$("#id").val(data['id_animal'])
           $("#nombre").val(data['nombre'])
           $("#edad").val(data['edad'])
           $("#color").val(data['color'])
             $("#id_raza").val(data['id_raza'])
             $("#id_sexo").val(data['id_sexo'])
-            $("#id_tipo").val(data['id_tipo'])
             $("#id_especie").val(data['id_especie'])
           $("#myModal").modal('show');
         }
       })
     })
     $(".actualiza").click(function(){
-      var arreglo=$("#actualizacion").serializeArray();
-      $.post("<?php echo URL ?>animal/edit/",{arreglo:arreglo},function(data){
-        window.location.href="<?php echo URL ?>animal/index";
+      var arreglo=$("#actualizacion").serialize();
+      $.post("<?php echo URL ?>animal/edit/",arreglo,function(data){
+        //window.location.href="<?//php echo URL ?>animal";
       })
     })
   })

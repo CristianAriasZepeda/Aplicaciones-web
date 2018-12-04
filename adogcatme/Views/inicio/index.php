@@ -32,7 +32,16 @@ if(!isset($_SESSION['id_tipo_usuario'])){ ?>
         </ol>
 
         <div class="carousel-inner">
+
             <div class="carousel-item active">
+                <img class="d-block w-100" src="Public/imagenes/gatos.jpg" alt="adopta">
+                <div class="carousel-caption">
+                    <h3>Ellos no tiene la culpa</h3>
+                    <p>Fotografia liva</p>
+                </div>
+            </div>
+
+            <div class="carousel-item">
                 <img class="d-block w-100" src="Public/imagenes/refugios.jpg" alt="adopta">
 
                 <div class="carousel-caption">
@@ -41,11 +50,11 @@ if(!isset($_SESSION['id_tipo_usuario'])){ ?>
                 </div>
             </div>
 
+
+
             <div class="carousel-item">
                 <img class="d-block w-100" src="Public/imagenes/adopcion.jpg" alt="adopta">
-
-
-                <div class="carousel-caption">
+                    <div class="carousel-caption">
                     <h3>Ellos no tiene la culpa</h3>
                     <p>Fotografia liva</p>
                 </div>
