@@ -66,3 +66,4 @@ class conexion
         $this->conexion->close();
     }
 }
+
