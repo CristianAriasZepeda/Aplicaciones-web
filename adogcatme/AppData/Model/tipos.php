@@ -9,7 +9,7 @@ namespace AppData\Model;
 class tipos
 {
     private $tabla="animal";
-    private $img,$descr;
+    private $img;
     private $id, $nombre, $edad, $color, $raza, $sexo, $especie;
     function __construct()
     {
@@ -32,7 +32,21 @@ class tipos
  					FROM animal,sexos,especies,razas 
  					WHERE animal.id_raza=razas.id_raza 
  					AND animal.id_sexo=sexos.id_sexo 
- 					AND animal.id_especie=especies.id_especie ORDER BY id_animal ASC";
+ 					AND animal.id_especie=especies.id_especie
+ 					ORDER BY id_animal ASC";
+        $datos=$this->conexion->queryResultados($sql);
+        return $datos;
+    }
+    function getone1()
+    {
+        $sql="SELECT animal.id_animal, animal.nombre, animal.edad, animal.color, animal.img, razas.raza_des,
+ 					sexos.sexo_des, especies.especies_des
+ 					FROM animal,sexos,especies,razas 
+ 					WHERE animal.id_raza=razas.id_raza 
+ 					AND animal.id_sexo=sexos.id_sexo 
+ 					AND animal.id_especie=especies.id_especie
+ 					AND animal.id_animal='{$this->id}' 
+ 					ORDER BY id_animal ASC";
         $datos=$this->conexion->queryResultados($sql);
         return $datos;
     }
@@ -49,7 +63,7 @@ class tipos
     }
     function edit($id)
     {
-        $sql="select id_animal,nombre,edad,color,id_raza,id_sexo,id_especie,img from {$this->tabla} where id_animal='{$id}'";
+        $sql="select id_animal,nombre,edad,color,id_raza,id_sexo,id_especie from {$this->tabla} where id_animal='{$id}'";
         $datos=$this->conexion->queryResultados($sql);
         return $datos;
     }
@@ -60,7 +74,7 @@ class tipos
         return $datos;
     }
     function update(){
-        $this->conexion->tiposup($this->nombre,$this->edad,$this->color,$this->raza,$this->sexo,$this->especie, $this->img,$this->id);
+        $this->conexion->tiposup($this->nombre,$this->edad,$this->color,$this->raza,$this->sexo,$this->especie,$this->id);
 
     }
 }

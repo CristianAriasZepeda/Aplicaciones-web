@@ -1,14 +1,10 @@
 <?php
 
 namespace AppData\Model;
-
-
 class conexion
 {
 
     private $datos=array("server"=>"localhost","user"=>"root","password"=>"", "base"=>"adogcatme");
-
-
 
     private $conexion;
 
@@ -52,11 +48,11 @@ class conexion
         $stm->execute();
 
     }
-    public function tiposup($a,$b,$c,$d,$e,$f,$g,$h)
+    public function tiposup($a,$b,$c,$d,$e,$f)
     {
-        $sql="update animal set nombre=?, edad=?, color=?, id_raza=?, id_sexo=?. id_especie=?,  img=? where id_animal=?";
+        $sql="update animal set nombre=?, edad=?, color=?, id_raza=?, id_sexo=?. id_especie=? where id_animal=?";
         $stm=$this->conexion->prepare($sql) or die (mysqli_error($this->conexion));
-        $stm->bind_param('ssssssss',$a,$b,$c,$d,$e,$f,$g,$h);
+        $stm->bind_param('ssssss',$a,$b,$c,$d,$e,$f);
         $stm->execute();
 
     }

@@ -12,7 +12,6 @@
             <th scope="col">Raza</th>
             <th scope="col">Sexo</th>
             <th scope="col">Especie</th>
-            <th scope="col">Imagen</th>
           <th scope="col"></th>
           <th scope="col"></th>
           <th scope="col">Editar</th>
@@ -30,7 +29,6 @@
             <td scope="col"><?php echo $fila['raza_des']." " ?></td>
             <td scope="col"><?php echo $fila['sexo_des']." " ?></td>
             <td scope="col"><?php echo $fila['especies_des']." " ?></td>
-            <td scope="col"><?php echo $fila['img']." " ?></td>
             <td scope="col"></td>
 
           <td scope="col"></td>

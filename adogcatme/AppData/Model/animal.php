@@ -15,7 +15,7 @@
  					sexos.sexo_des, especies.especies_des 
  					FROM animal,sexos,especies,razas 
  					WHERE animal.id_raza=razas.id_raza 
- 					AND animal.id_seco=sexos.id_sexo 
+ 					AND animal.id_sexo=sexos.id_sexo 
  					AND animal.id_especie=especies.id_especie ORDER BY id_animal ASC";
 
 			$datos=$this->conexion->queryResultados($sql);
@@ -33,7 +33,7 @@
  					sexos.id_sexo,  especies.id_especie 
  					FROM animal,sexos,especies,razas 
  					WHERE animal.id_raza=razas.id_raza 
- 					AND animal.id_seco=sexos.id_sexo 
+ 					AND animal.id_sexo=sexos.id_sexo 
  					 
  					AND animal.id_especie=especies.id_especie
  					 AND animal.id_animal='{$id}'
@@ -45,7 +45,7 @@
 		public function updatePer(){
 			$sql="UPDATE animal SET nombre='{$this->nombre}', edad='{$this->edad}',
  					color='{$this->color}', id_raza='{$this->raza}', id_sexo='{$this->sexo}'
- 					 , id_especie='{$this->especie}', img='{$this->img}' WHERE id_animal='$this->id'";
+ 					 , id_especie='{$this->especie}' WHERE id_animal='$this->id'";
 			$this->conexion->querysimple($sql);
 		}
         function getAllRazas()

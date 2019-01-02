@@ -21,7 +21,7 @@
             </div>
               <br>
 
-                  <form class="form-signin" action="" method="post" id="actualizacion">
+
                       <input type="hidden" name="id" id="id">
                       <div class="form-group">
 

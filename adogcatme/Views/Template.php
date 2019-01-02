@@ -65,7 +65,7 @@ class Template
                             Servicios
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Adopciones</a>
+                            <a class="dropdown-item" href="<?php echo URL?>tipos">Adoptar</a>
                             <a class="dropdown-item" href="#">Donaciones</a>
                             <a class="dropdown-item" href="#">Galeria</a>
 

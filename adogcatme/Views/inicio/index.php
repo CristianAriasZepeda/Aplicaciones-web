@@ -96,46 +96,35 @@ if(!isset($_SESSION['id_tipo_usuario'])){ ?>
                 la mascota va a estar bien cuidada hacen visitas a la casa en donde va a vivir para ver que sea un lugar seguro
                 y en donde pueda vivir cómodamente</p>
             <br>
+
+
             <div class="row">
                 <div-col-sm class="12">
                     <div class="card-group">
                         <div class="card">
-                            <div class="card-block">
-                                <h4 class="card-title text-dark">Cuidados</h4>
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <main role="main" class="col-md-12">
+
+                                        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                                            <h5 class="text-dark">Animales disponibles para adopción</h5>
+                                        </div>
+                                        <div class="container text-dark" >
+                                            <div class="row">
+                                                <?php
+                                                require_once ("tabla.php");
+                                                ?>
+                                            </div>
+                                        </div>
+
+                                    </main>
+
+                                </div>
                             </div>
-                            <img class="card-img-top" width="90%" height="90%" src="Public/imagenes/cat.jpg" alt="card image cap">
-                            <div class="card-block">
-                                <p class="card-text text-dark">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                <button class="btn btn-primary" data-toggle="modal" data-target="#mymodal">ver mas</button>
-
-                            </div>
-                        </div>
 
 
-                        <div class="card">
-                            <div class="card-block">
-                                <h4 class="card-title text-dark">Especies</h4>
-                            </div>
-                            <img class="card-img-top" width="90%" height="90%" src="Public/imagenes/peri.jpg" alt="card image cap">
-                            <div class="card-block">
-                                <p class="card-text text-dark">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                <button class="btn btn-primary" data-toggle="modal" data-target="#mymodal">ver mas</button>
-
-                            </div>
-                        </div>
 
 
-                        <div class="card">
-                            <div class="card-block">
-                                <h4 class="card-title text-dark">Cachorros</h4>
-                            </div>
-                            <img class="card-img-top" width="90%" height="90%" src="Public/imagenes/infor.jpg" alt="card image cap">
-                            <div class="card-block">
-                                <p class="card-text text-dark">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                <button class="btn btn-primary" data-toggle="modal" data-target="#mymodal">ver mas</button>
-
-                            </div>
-                        </div>
                     </div>
             </div>
         </div>
