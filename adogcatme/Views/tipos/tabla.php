@@ -19,16 +19,11 @@ while($row=mysqli_fetch_array($dato))
 	              	<h6 class='card-title'>{$row[6]}</h6> 
 	              	<h6 class='card-title'>{$row[7]}</h6>         
 		          	<div>
-		      
-            
-			          	<a href='".URL."tipos/eliminar/{$row[0]}' class='btn tooltipped' data-position='bottom' data-tooltip='Eliminarr'>Eliminar       		
-			          	</a>
-			          	<a href='".URL."tipos/modificar/{$row[0]}' class='btn'>
-			             	Modificar
-			            </a>
-			            <a href='".URL."{$row[0]}' class='btn'>
-			             	Adoptar
-			            </a>
+		          	
+			          	<a class='btn btn-primary btn_eliminar' href='#!' data-id='{$row['id_animal']}'>Eliminar</a>
+			          	<button type='button' class='btn btn-primary' data-toggle='modal' id='out'  data-id='{$row['id_animal']}'>
+                  			Modificar
+                		</button> 
 		        	</div> 		              		        
 	            </div>
 	         </div>

@@ -16,7 +16,7 @@ while($row=mysqli_fetch_array($dato))
 	              	<h5 class='card-title'>{$row[6]}</h5>         
 		          	<div>
 		          	
-		                <a href='tipos'>
+		                <a href='Ver_mas'>
 			             	Ver mas
 			            </a>
 		        	</div> 		              		        

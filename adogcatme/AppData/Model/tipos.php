@@ -50,11 +50,16 @@ class tipos
         $datos=$this->conexion->queryResultados($sql);
         return $datos;
     }
-    
+
     function add()
     {
         $this->conexion->proc($this->nombre,$this->edad,$this->color,$this->id_raza,$this->id_sexo,$this->id_especie,$this->img);
 
+    }
+    function add1()
+    {
+        $sql = "insert into {$this->tabla} (nombre,edad,color,id_raza,id_sexo,id_especie,img) values('{$this->nombre}',{$this->edad},'{$this->color}',{$this->id_raza},{$this->id_sexo},{$this->id_especie},'{$this->img}')";
+        $this->conexion->querysimple($sql);
     }
     function delete($id)
     {
@@ -73,8 +78,21 @@ class tipos
         $datos=$this->conexion->queryResultados($sql);
         return $datos;
     }
+
+    function getImg($id)
+    {
+        $sql="SELECT img FROM animal where id_animal='{$id}'";
+        $datos=$this->conexion->queryResultados($sql);
+        return $datos;
+    }
+
     function update(){
         $this->conexion->tiposup($this->nombre,$this->edad,$this->color,$this->raza,$this->sexo,$this->especie,$this->id);
 
+    }
+    function verify(){
+        $sql = "select * from {$this->tabla} where  nombre='{$this->nombre}' ";
+        $dato=$this->conexion->queryResultados($sql);
+        return $dato;
     }
 }

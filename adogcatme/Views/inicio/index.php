@@ -1,27 +1,5 @@
 <?php
-if(!isset($_SESSION['id_tipo_usuario'])){ ?>
-<script type="text/javascript">
-    $(document).ready(function(){
-        setTimeout(function(){
-        swal({
-            title: "Aun no has iniciado sesión",
-            text:"Ingresar ahora",
-            type:"warning",
-            closeOnConfirm: false,
-            closeOnCancel:true,
-            showCancelButton:true,
-            cancelButtonClass: "btn-danger",
-            confirmButtonClass: "btn-success",
-        },
-        function (isConfirm) {
-            if(isConfirm)
-                window.location.href = "<?php echo URL ?>login";
-        })
-        },4000)
-    })
-</script>
-<?php } ?>
-
+?>
 <section id="carrsuel">
 
     <div id="carrusel -Home" class="carousel slide" data-ride="carousel">
@@ -49,8 +27,6 @@ if(!isset($_SESSION['id_tipo_usuario'])){ ?>
                     <p>Fotografia liva</p>
                 </div>
             </div>
-
-
 
             <div class="carousel-item">
                 <img class="d-block w-100" src="Public/imagenes/adopcion.jpg" alt="adopta">
