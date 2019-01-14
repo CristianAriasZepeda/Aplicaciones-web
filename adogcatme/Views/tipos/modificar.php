@@ -11,28 +11,28 @@
             <div class="col-md-8 order-md-1">
                 <form class="needs-validation" novalidate>
                     <div class="mb-3">
-                        <label for="nombre">Nombre</label>
+                        <label for="titulo">Nombre</label>
                         <input type="hidden" name="id" value="<?php echo $row[0]?>">
-                        <input type="text" class="form-control" id="nombre" name="nombre" placeholder="nombre" value="<?php echo $row[1]?>" required>
+                        <input type="text" class="form-control" id="titulo" name="titulo" placeholder="titulo" value="<?php echo $row[1]?>" required>
                         <div class="invalid-feedback" style="width: 100%;">
-                            El nombre es requerido
+                            El titulo es requerido
                         </div>
                     </div>
                     <div class="mb-3">
-                        <label for="edad">Edad</label>
+                        <label for="fecha">Edad</label>
                         <div class="input-group">
-                            <input type="text" class="form-control" id="edad" name="edad"placeholder="edad" value="<?php echo $row[2]?>" required>
+                            <input type="text" class="form-control" id="fecha" name="fecha"placeholder="fecha" value="<?php echo $row[2]?>" required>
                             <div class="invalid-feedback" style="width: 100%;">
-                                la edad es requerida
+                                la fecha es requerida
                             </div>
                         </div>
                     </div>
                     <div class="mb-3">
-                        <label for="color">Color</label>
+                        <label for="fecha">Color</label>
                         <div class="input-group">
-                            <input type="text" class="form-control" id="color" name="color"placeholder="color" value="<?php echo $row[3]?>" required>
+                            <input type="text" class="form-control" id="fecha" name="fecha"placeholder="fecha" value="<?php echo $row[3]?>" required>
                             <div class="invalid-feedback" style="width: 100%;">
-                                el color es requerido
+                                la fecha es requerida
                             </div>
                         </div>
                     </div>
@@ -109,12 +109,12 @@
                 }
             })
         })
-        $(".actualiza").click(function(){
+       /* $(".actualiza").click(function(){
             var arreglo=$("#actualizacion").serialize();
             $.post("<//? //php echo URL ?>animal/edit/",arreglo,function(data){
                 //window.location.href="<//?//php echo URL ?>animal";
             })
         })
-    })
+    })*/
 </script>
 

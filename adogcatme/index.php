@@ -6,7 +6,7 @@
 
 
 
-    define('URL',"http://localhost/hola/Prueba_ISC601/adogcatme/");
+    define('URL',"http://localhost/Aplicaciones-web/adogcatme/");
 
 
 

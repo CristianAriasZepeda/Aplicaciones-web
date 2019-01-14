@@ -23,13 +23,13 @@ class sexoController
         return $datos;
        // echo "Hola desde mi controlador";
     }
-    public function crear()
+    public function agregar()
     {
         if($_POST)
         {
             $this->sexos->set("sexo_des",$_POST['sexo_des']);
             $this->sexos->add();
-            header("Location:".URL."sexo?msg=ok");
+            header("Location:".URL."sexo");
         }
     }
     public function eliminar($id){
@@ -37,7 +37,7 @@ class sexoController
        $this->sexos->delete($id[0]);
        header("Location:".URL."sexo");
     }
-    public function modificar($id){
+    public function modificar1($id){
         //print_r($id);
         $datos=$this->sexos->edit($id[0]);
         return $datos;

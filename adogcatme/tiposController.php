@@ -4,7 +4,7 @@ use AppData\Model\especies;
 use AppData\Model\razas;
 use AppData\Model\sexo;
 
-class ver_masController
+class tiposController
 {
     private $tipos,$raza, $sexo,  $especie;
     public function __construct()
@@ -59,6 +59,31 @@ class ver_masController
         }
     }
 
+    public function crear()
+    {
+
+        if($_POST)
+        {
+            $this->tipos->set('nombre',$_POST["nombre"]);
+            $this->tipos->set('edad',$_POST["edad"]);
+            $this->tipos->set('color',$_POST["color"]);
+            $this->tipos->set('id_raza',$_POST["id_raza"]);
+            $this->tipos->set('id_sexo',$_POST["id_sexo"]);
+            $this->tipos->set('id_especie',$_POST["id_especie"]);
+            $this->tipos->set('img',addslashes(file_get_contents($_FILES['imagen']['tmp_name'])));
+            $datos[1]=false;
+            if(mysqli_num_rows($this->tipos->verify())==0) {
+
+                $this->tipos->add1();
+                header("Location:".URL."tipos");
+                $datos[1]=true;
+            }
+            $datos[0]=$this->tipos->getAll();
+            header("Location:".URL."tipos");
+            return $datos;
+        }
+    }
+
 
       public function eliminar($id){
        $this->tipos->delete($id[0]);
@@ -101,6 +126,19 @@ class ver_masController
             $datos=mysqli_fetch_assoc($datos);
         }
         echo json_encode($datos);
+    }
+    public function getimg ($id)
+    {
+        $datos=$this->tipos->getImg($id[0]);
+        while($row=mysqli_fetch_array($datos))
+        {
+            echo "
+                <div class='col-sm'>"
+            ?>
+            <img class='card-img-top' alt='Card image cap' style=' height:80px;' src='data:image/jpg; base64, <?php echo base64_encode($row[0]); ?>'/>
+            <?php echo"                
+                </div>";
+        }
     }
     public function print_pdf()
     {

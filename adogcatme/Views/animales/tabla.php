@@ -1,6 +1,4 @@
 <?php
-
-$dato=$datos[0];
 $dato=$datos[1];
 $dato=$datos[2];
 $dato=$datos[3];

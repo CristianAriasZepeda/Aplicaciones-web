@@ -65,9 +65,7 @@ class Template
                             Servicios
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="<?php echo URL?>Ver_mas">Adoptar</a>
-                            <a class="dropdown-item" href="#">Donaciones</a>
-                            <a class="dropdown-item" href="#">Galeria</a>
+                            <a class="dropdown-item" href="<?php echo URL?>ver_mas">Adoptar</a>
 
                         </div>
                     </li>
@@ -106,12 +104,18 @@ class Template
                 <ul class="navbar-nav mr-auto">
 
                     <li class="nav-item active">
-                        <a class="nav-link" href="<?php echo URL ?>tipos">
+                        <a class="nav-link" href="<?php echo URL ?>animales">
                             Animales en Adopcion
                         </a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="<?php echo URL?>" class="black-text">Galeria</a>
+                        <a class="nav-link" href="<?php echo URL?>razas" class="black-text">Razas</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="<?php echo URL?>especies" class="black-text">Especies</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="<?php echo URL?>" class="black-text">Registros</a>
                     </li>
                 </ul>
                 <div class="btn-group dropleft" style="margin-right:12%;">

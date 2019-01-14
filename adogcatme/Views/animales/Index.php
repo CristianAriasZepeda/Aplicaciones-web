@@ -4,7 +4,7 @@
       <div class="row">
         <main role="main" class="col-md-12">          
           <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-            <h1 class="h2">Agregados</h1>
+            <h1 class="h2">Animales en adopción</h1>
             <div class="btn-toolbar mb-2 mb-md-0">
               <div class="btn-group mr-2">
                 <a class="nav-link btn btn-sm btn-outline-secondary" href="<?php echo URL ?>animales/agregar">Agregar</a>
@@ -183,24 +183,21 @@
 
 <script type="text/javascript">
     $(document).ready(function(){
-      $("#body_table").on("click","button#out",function(){            
-        var id=$(this).data("id");
-        $.get("<?php echo URL?>animales/modificar/"+id,function(res){
-          var datos=JSON.parse(res);
-          console.log(datos);
-            console.log(res);
-
-          $("#id").val(datos["id"]);
-          $("#nombre").val(datos["nombre"]);
-          $("#edad").val(datos["edad"]);
-          $("#color").val(datos["color"]);
-          $("#raza").val(datos["id_raza"]);
-          $("#sexo").val(datos["id_sexo"]);
-          $("#especie").val(datos["id_especie"]);
+      $("#body_table").on("click","button#out",function(){
+          var id=$(this).data("id");
+            $.get("<?php echo URL?>animales/modificar1/"+id,function(res){
+                var datos=JSON.parse(res);
+                console.log(res);
+                $("#id").val(datos["id"]);
+                 $("#nombre").val(datos["nombre"]);
+                 $("#edad").val(datos["edad"]);
+                 $("#color").val(datos["color"]);
+                 $("#raza").val(datos["id_raza"]);
+                 $("#sexo").val(datos["id_sexo"]);
+                 $("#especie").val(datos["id_especie"]);
         });
         $.get("<?php echo URL?>animales/getimg/"+id,function(res){
           $(".salida").html(res);
-            console.log(res);
         });
         $("#mimodal").modal("show");
       });
@@ -224,7 +221,7 @@
           $("#modal_grafica").modal("show");
         });
       });
-    })  
+    })
 </script>
 
 

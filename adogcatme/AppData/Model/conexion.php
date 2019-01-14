@@ -51,15 +51,33 @@ class conexion
 
     }
 
-    public function tiposup($a,$b,$c,$d,$e,$f,$g,$h)
+    public function razasadd1($c)
     {
-        $sql="update animal set nombre=?, edad=?, color=?, id_raza=?, id_sexo=?, id_especie=?, img=? where id_animal=?";
+        $e='1';
+        $sql="insert into razas(raza_des) values(?)";
         $stm=$this->conexion->prepare($sql) or die (mysqli_error($this->conexion));
-        $stm->bind_param('ssssssss',$a,$b,$c,$d,$e,$f,$g,$h);
+        $stm->bind_param('s',$c);
         $stm->execute();
 
     }
 
+    public function razasup($c)
+    {
+        $sql="update razas set  raza_des=? where id_raza=?";
+        $stm=$this->conexion->prepare($sql) or die (mysqli_error($this->conexion));
+        $stm->bind_param('s',$c);
+        $stm->execute();
+
+    }
+    public function especiesadd($c)
+    {
+        $e='1';
+        $sql="insert into especies(especies_des) values(?)";
+        $stm=$this->conexion->prepare($sql) or die (mysqli_error($this->conexion));
+        $stm->bind_param('s',$c);
+        $stm->execute();
+
+    }
     public function __destruct()
     {
         $this->conexion->close();

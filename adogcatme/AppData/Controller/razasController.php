@@ -1,56 +1,49 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: JAZMIN
- * Date: 10/05/2018
- * Time: 01:12 PM
- */
-
 namespace AppData\Controller;
-
-
 class razasController
 {
-    private $razas;
+    private $tipos;
     public function __construct()
     {
-        $this->razas=new \AppData\Model\razas();
+        $this->tipos= new \AppData\Model\razas();
     }
-
     public function index()
     {
-        $datos= $this->razas->getAll();
+        $datos1=$this->tipos->getAll();
+        $datos[0]=$datos1;
         return $datos;
-       // echo "Hola desde mi controlador";
     }
-    public function crear()
+    public function agregar()
     {
         if($_POST)
         {
-            $this->razas->set("raza_des",$_POST['raza_des']);
-            $this->razas->add();
-            header("Location:".URL."razas?msg=ok");
+            $this->tipos->set('raza_des',$_POST["raza_des"]);
+            $this->tipos->add();
+            header("Location:".URL."razas");
         }
+
     }
-    public function eliminar($id){
-          //print_r($id);
-       $this->razas->delete($id[0]);
-       header("Location:".URL."razas");
-    }
-    public function modificar($id){
-        //print_r($id);
-        $datos=$this->razas->edit($id[0]);
+
+      public function eliminar($id){
+       $this->tipos->delete($id[0]);
+       $datos1=$this->tipos->getAll();
+        $datos[0]=$datos1;
         return $datos;
     }
-    public function update($id){
-        //print_r($id);
-        $this->razas->set("id_raza",$_POST['id_raza']);
-        $this->razas->set("raza_des",$_POST['raza_des']);
-        $this->razas->update();
-        header("Location:".URL."razas");
 
+    public function modificar($id){
+        $datos=$this->tipos->edit($id[0]);        
+        return $datos;
+    }
+    public function actualizar($id)
+    {
+        if($_POST)
+        {
+
+            $this->tipos->set('id_raza',$_POST["id_raza"]);
+            $this->tipos->set('raza_des',$_POST["raza_des"]);
+            $this->tipos->update();
+            header("Location:".URL."razas");
+        }
     }
 }
-
-
-

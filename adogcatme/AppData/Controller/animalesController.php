@@ -27,7 +27,6 @@ class animalesController
     }
     public function agregar()
     {
-        print_r($_POST);
         if($_POST)
 
         {
@@ -42,7 +41,6 @@ class animalesController
         $this->animales->set('id_especie',$_POST["id_especie"]);
         $this->animales->set('img',$bytes);
         $this->animales->add();
-        print_r($_POST);
         header("Location:".URL."animales");
         }
         else{
@@ -67,11 +65,11 @@ class animalesController
 
     }
 
-    public function modificar ($id) 
+    public function modificar1 ($id)
     {    
         $datos=$this->animales->edit($id[0]);
-        print_r($datos);
-        print_r(json_encode(mysqli_fetch_assoc($datos)));        
+        /*print_r($datos);*/
+       print_r(json_encode(mysqli_fetch_assoc($datos)));
     }
     public function getimg ($id) 
     {    
@@ -88,7 +86,7 @@ class animalesController
     }
     public function actualizar($id)
     {
-        print_r($_POST);
+
         if($_POST)
         {
             $nombre=$_FILES['imagen']['name'];
@@ -105,11 +103,8 @@ class animalesController
             $this->animales->update();
             header("Location:".URL."animales");
 
+
         }
-
-
-
-
 
     }
     public function print_pdf()

@@ -27,9 +27,10 @@ class animales
     function getAll()
     {
         $sql="SELECT animal.id_animal, animal.nombre, animal.edad, animal.color, animal.img, razas.raza_des,
- 					sexos.sexo_des, especies.especies_des
+ 					sexos.sexo_des, especies.especies_des, animal.estado_animal
  					FROM animal,sexos,especies,razas 
- 					WHERE animal.id_raza=razas.id_raza 
+ 					WHERE estado_animal=0
+ 					AND animal.id_raza=razas.id_raza 
  					AND animal.id_sexo=sexos.id_sexo 
  					AND animal.id_especie=especies.id_especie
  					ORDER BY id_animal ASC";
@@ -40,19 +41,18 @@ class animales
     
     function add()
     {
-        $this->conexion->proc($this->nombre,$this->edad,$this->color,$this->id_raza,$this->id_sexo,$this->id_especie,$this->img);
+        $this->conexion->proc($this->nombre,$this->edad,$this->color,$this->id_raza,$this->id_sexo,$this->id_especie,$this->img,$this->estado_animal);
 
     }
     function delete($id)
     {
-
-        $sql="UPDATE animal SET estado=0 WHERE id_animal='{$id}'";
-        $this->conexion->querysimple($sql);
+        $sql="Update animal set estado_animal=1 WHERE id_animal='{$id}'";
+        $datos=$this->conexion->querysimple($sql);
+        return $datos;
     }
     function edit($id)
     {
         $sql="Select id_animal,nombre,edad,color,id_raza,id_sexo,id_especie from {$this->tabla} where id_animal='{$id}'";
-        print_r($sql);
         $datos=$this->conexion->queryResultados($sql);
         return $datos;
 

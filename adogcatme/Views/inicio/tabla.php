@@ -10,18 +10,12 @@ while($row=mysqli_fetch_array($dato))
 
 		<div class='col-sm'>
 			<div class='card' style='width: 20rem;'>"
-    ?><img class='card-img-top' alt='Card image cap' src='data:image/jpg; base64, <?php echo base64_encode($row[4]); ?>'/><?php echo"
-    	            <div class='card-body' >
-	              	<h5 class='card-title'>{$row[1]}</h5>
-	              	<h5 class='card-title'>{$row[6]}</h5>         
-		          	<div>
-		          	
-		                <a href='Ver_mas'>
-			             	Ver mas
-			            </a>
-		        	</div> 		              		        
-	            </div>
+    ?><img class='card-img-top' height="200" width="200" alt='' src='data:image/jpg; base64, <?php echo base64_encode($row[4]); ?>'/><?php echo"
+    	            
 	         </div>
+	         <div class='card-body' >
+	              	<h5 class='card-title'>{$row[1]}</h5>       		              		        
+	            </div>
 	          
         </div>";
 }

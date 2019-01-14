@@ -1,0 +1,673 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c8dc6eae-8d52-4a7a-968e-80ba29816507" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/adogcatme/.idea/workspace.xml" afterPath="$PROJECT_DIR$/adogcatme/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/adogcatme/AppData/Controller/loginController.php" afterPath="$PROJECT_DIR$/adogcatme/AppData/Controller/loginController.php" />
+      <change beforePath="$PROJECT_DIR$/adogcatme/AppData/Model/Login.php" afterPath="$PROJECT_DIR$/adogcatme/AppData/Model/Login.php" />
+      <change beforePath="$PROJECT_DIR$/adogcatme/Views/Template.php" afterPath="$PROJECT_DIR$/adogcatme/Views/Template.php" />
+      <change beforePath="$PROJECT_DIR$/adogcatme/Views/inicio/index.php" afterPath="$PROJECT_DIR$/adogcatme/Views/inicio/index.php" />
+      <change beforePath="$PROJECT_DIR$/adogcatme/Views/login/index.php" afterPath="$PROJECT_DIR$/adogcatme/Views/login/index.php" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/adogcatme/Views/inicio/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1419">
+              <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Template.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/adogcatme/Views/Template.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1518">
+              <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/adogcatme/Views/quienessomos/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Enrutador.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/adogcatme/AppData/Config/Enrutador.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="40" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Request.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/adogcatme/AppData/Config/Request.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="57" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/adogcatme/index.php" />
+        <option value="$PROJECT_DIR$/adogcatme/AppData/Config/Request.php" />
+        <option value="$PROJECT_DIR$/adogcatme/Views/loginguardar/index.php" />
+        <option value="$PROJECT_DIR$/adogcatme/Views/login/index.php" />
+        <option value="$PROJECT_DIR$/adogcatme/AppData/Controller/sexo.php" />
+        <option value="$PROJECT_DIR$/adogcatme/AppData/Model/sexos.php" />
+        <option value="$PROJECT_DIR$/adogcatme/Views/sexos/modificar.php" />
+        <option value="$PROJECT_DIR$/adogcatme/Views/sexos/crear.php" />
+        <option value="$PROJECT_DIR$/adogcatme/Views/sexos/index.php" />
+        <option value="$PROJECT_DIR$/adogcatme/AppData/Controller/quienessomosController.php" />
+        <option value="$PROJECT_DIR$/adogcatme/Views/quienessomos/index.php" />
+        <option value="$PROJECT_DIR$/adogcatme/Views/sexo/crear.php" />
+        <option value="$PROJECT_DIR$/adogcatme/Views/sexo/modificar.php" />
+        <option value="$PROJECT_DIR$/adogcatme/AppData/Model/sexo.php" />
+        <option value="$PROJECT_DIR$/adogcatme/Views/sexo/index.php" />
+        <option value="$PROJECT_DIR$/adogcatme/AppData/Controller/sexoController.php" />
+        <option value="$PROJECT_DIR$/adogcatme/AppData/Controller/razasController.php" />
+        <option value="$PROJECT_DIR$/adogcatme/AppData/Model/razas.php" />
+        <option value="$PROJECT_DIR$/adogcatme/Views/razas/index.php" />
+        <option value="$PROJECT_DIR$/adogcatme/AppData/Controller/especiesController.php" />
+        <option value="$PROJECT_DIR$/adogcatme/AppData/Model/especies.php" />
+        <option value="$PROJECT_DIR$/adogcatme/Views/razas/modificar.php" />
+        <option value="$PROJECT_DIR$/adogcatme/Views/especies/index.php" />
+        <option value="$PROJECT_DIR$/adogcatme/Views/especies/modificar.php" />
+        <option value="$PROJECT_DIR$/adogcatme/AppData/Model/Lista.php" />
+        <option value="$PROJECT_DIR$/adogcatme/Views/lista/tabla.php" />
+        <option value="$PROJECT_DIR$/adogcatme/AppData/Controller/listaController.php" />
+        <option value="$PROJECT_DIR$/adogcatme/AppData/Model/lista.php" />
+        <option value="$PROJECT_DIR$/adogcatme/Views/lista/index.php" />
+        <option value="$PROJECT_DIR$/adogcatme/Views/animal/ver.php" />
+        <option value="$PROJECT_DIR$/adogcatme/Views/tipos/index.php" />
+        <option value="$PROJECT_DIR$/adogcatme/Public/css/estilos.css" />
+        <option value="$PROJECT_DIR$/adogcatme/Views/inicio/index.php" />
+        <option value="$PROJECT_DIR$/adogcatme/Views/Template.php" />
+        <option value="$PROJECT_DIR$/adogcatme/AppData/Controller/exaController.php" />
+        <option value="$PROJECT_DIR$/adogcatme/AppData/Model/exa.php" />
+        <option value="$PROJECT_DIR$/adogcatme/Views/animal/print_pdf.php" />
+        <option value="$PROJECT_DIR$/adogcatme/AppData/Controller/animalController.php" />
+        <option value="$PROJECT_DIR$/adogcatme/Views/tipos/print_pdf.php" />
+        <option value="$PROJECT_DIR$/adogcatme/Views/tipos/Index.php" />
+        <option value="$PROJECT_DIR$/adogcatme/AppData/Model/tipos.php" />
+        <option value="$PROJECT_DIR$/adogcatme/AppData/Model/animal.php" />
+        <option value="$PROJECT_DIR$/adogcatme/Views/animal/index.php" />
+        <option value="$PROJECT_DIR$/adogcatme/Views/tipos/agregar.php" />
+        <option value="$PROJECT_DIR$/adogcatme/AppData/Model/conexion.php" />
+        <option value="$PROJECT_DIR$/adogcatme/AppData/Controller/tiposController.php" />
+        <option value="$PROJECT_DIR$/adogcatme/Views/tipos/prueba.php" />
+        <option value="$PROJECT_DIR$/adogcatme/Views/tipos/modificar.php" />
+        <option value="$PROJECT_DIR$/adogcatme/Views/tipos/tabla.php" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="PhpServers">
+    <servers />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="31" />
+    <option name="y" value="67" />
+    <option name="width" value="1296" />
+    <option name="height" value="735" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Aplicaciones-web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Aplicaciones-web" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Aplicaciones-web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Aplicaciones-web" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="adogcatme" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Aplicaciones-web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Aplicaciones-web" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="adogcatme" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="AppData" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Aplicaciones-web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Aplicaciones-web" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="adogcatme" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="AppData" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Config" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Aplicaciones-web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Aplicaciones-web" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="adogcatme" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="AppData" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Controller" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Aplicaciones-web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Aplicaciones-web" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="adogcatme" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="AppData" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Model" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Aplicaciones-web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Aplicaciones-web" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="adogcatme" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Views" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Aplicaciones-web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Aplicaciones-web" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="adogcatme" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="animal" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Aplicaciones-web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Aplicaciones-web" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="adogcatme" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="inicio" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Aplicaciones-web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Aplicaciones-web" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="adogcatme" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="quienessomos" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Aplicaciones-web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Aplicaciones-web" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="adogcatme" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="tipos" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Turismo-DG" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\Aplicaciones-web\adogcatme\Views\tipos" />
+      <recent name="C:\xampp\htdocs\Aplicaciones-web\adogcatme\Views\animal" />
+      <recent name="C:\xampp\htdocs\Aplicaciones-web\adogcatme\AppData\Controller" />
+      <recent name="C:\xampp\htdocs\Aplicaciones-web\adogcatme\AppData\Model" />
+      <recent name="C:\xampp\htdocs\Aplicaciones-web\adogcatme\Views" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c8dc6eae-8d52-4a7a-968e-80ba29816507" name="Default" comment="" />
+      <created>1539090744614</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1539090744614</updated>
+      <workItem from="1539090745933" duration="1533000" />
+      <workItem from="1539568389810" duration="12000" />
+      <workItem from="1539692498980" duration="4364000" />
+      <workItem from="1540213247380" duration="3070000" />
+      <workItem from="1540994846282" duration="3677000" />
+      <workItem from="1541037108255" duration="17001000" />
+      <workItem from="1541524947462" duration="11326000" />
+      <workItem from="1542116660329" duration="1364000" />
+      <workItem from="1542219257089" duration="3067000" />
+      <workItem from="1542667743719" duration="12115000" />
+      <workItem from="1542809490864" duration="29282000" />
+      <workItem from="1547259411314" duration="1303000" />
+      <workItem from="1547261700597" duration="722000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="88836000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-13" y="-13" width="2586" height="1386" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23203126" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293718" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/adogcatme/Views/especies/modificar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adogcatme/Views/especies/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="858">
+          <caret line="36" column="9" lean-forward="true" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adogcatme/AppData/Model/especies.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1250">
+          <caret line="54" column="57" lean-forward="false" selection-start-line="54" selection-start-column="57" selection-end-line="54" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adogcatme/AppData/Controller/especiesController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="732">
+          <caret line="49" column="40" lean-forward="false" selection-start-line="49" selection-start-column="40" selection-end-line="49" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adogcatme/Views/lista/graficar.php" />
+    <entry file="file://$PROJECT_DIR$/adogcatme/AppData/Controller/listaController.php" />
+    <entry file="file://$PROJECT_DIR$/adogcatme/AppData/Model/lista.php" />
+    <entry file="file://$PROJECT_DIR$/adogcatme/Views/lista/datos.php" />
+    <entry file="file://$PROJECT_DIR$/adogcatme/Views/lista/tabla.php" />
+    <entry file="file://$PROJECT_DIR$/adogcatme/Views/lista/print_pdf.php" />
+    <entry file="file://$PROJECT_DIR$/adogcatme/Views/lista/index.php" />
+    <entry file="file://$PROJECT_DIR$/adogcatme/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="726">
+          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adogcatme/Views/animal/eliminar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adogcatme/AppData/Config/Autoload.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="19" column="24" lean-forward="true" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adogcatme/Views/razas/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="776">
+          <caret line="33" column="56" lean-forward="false" selection-start-line="33" selection-start-column="56" selection-end-line="33" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/xampu/htdocs/Prueba_ISC601/HP_M/Views/Habitaciones/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="599">
+          <caret line="231" column="47" lean-forward="true" selection-start-line="231" selection-start-column="47" selection-end-line="231" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/xampu/htdocs/Prueba_ISC601/HP_M/AppData/Controller/tareasController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2673">
+          <caret line="81" column="16" lean-forward="false" selection-start-line="81" selection-start-column="16" selection-end-line="82" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adogcatme/Public/css/estilos.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="10" column="57" lean-forward="false" selection-start-line="10" selection-start-column="57" selection-end-line="10" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adogcatme/AppData/Controller/exaController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="792">
+          <caret line="62" column="0" lean-forward="false" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adogcatme/Views/exa/agregar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1348">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adogcatme/Views/exa/Index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2489">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adogcatme/Views/exa/modificar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1348">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adogcatme/Views/exa/tabla.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adogcatme/AppData/Model/exa.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="788">
+          <caret line="33" column="18" lean-forward="true" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adogcatme/AppData/Controller/razasController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="25" column="27" lean-forward="true" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adogcatme/AppData/Model/razas.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="894">
+          <caret line="35" column="27" lean-forward="false" selection-start-line="35" selection-start-column="27" selection-end-line="35" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adogcatme/Views/animal/print_pdf.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="23" column="57" lean-forward="false" selection-start-line="23" selection-start-column="57" selection-end-line="23" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adogcatme/Views/tipos/print_pdf.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1818">
+          <caret line="87" column="57" lean-forward="false" selection-start-line="87" selection-start-column="57" selection-end-line="87" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adogcatme/AppData/Model/sexo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="942">
+          <caret line="37" column="19" lean-forward="false" selection-start-line="37" selection-start-column="19" selection-end-line="37" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adogcatme/Base_datos.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="2" column="19" lean-forward="false" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adogcatme/AppData/Model/Login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-792">
+          <caret line="4" column="35" lean-forward="true" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adogcatme/Views/Login/Index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adogcatme/AppData/Controller/loginController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adogcatme/Views/animal/get.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adogcatme/AppData/Controller/animalController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="68" column="21" lean-forward="true" selection-start-line="68" selection-start-column="21" selection-end-line="68" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adogcatme/AppData/Model/animal.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1947">
+          <caret line="59" column="38" lean-forward="true" selection-start-line="59" selection-start-column="38" selection-end-line="59" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adogcatme/Views/animal/agregar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-528">
+          <caret line="8" column="49" lean-forward="false" selection-start-line="8" selection-start-column="49" selection-end-line="8" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adogcatme/AppData/Model/conexion.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1782">
+          <caret line="54" column="32" lean-forward="false" selection-start-line="54" selection-start-column="32" selection-end-line="54" selection-end-column="32" />
+          <folding>
+            <marker date="1543979001939" expanded="true" signature="758:848" ph="insert into animal... " />
+            <marker date="1543979001939" expanded="true" signature="1083:1260" ph="insert into $... " />
+            <marker date="1543979001939" expanded="true" signature="1380:1438" ph="update img... " />
+            <marker date="1543979001939" expanded="true" signature="1674:1771" ph="update animal... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adogcatme/Views/tipos/modificar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="762">
+          <caret line="111" column="36" lean-forward="false" selection-start-line="111" selection-start-column="36" selection-end-line="111" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adogcatme/Views/tipos/Index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="10" column="95" lean-forward="true" selection-start-line="10" selection-start-column="95" selection-end-line="10" selection-end-column="95" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adogcatme/AppData/Controller/tiposController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3069">
+          <caret line="95" column="9" lean-forward="true" selection-start-line="95" selection-start-column="9" selection-end-line="95" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adogcatme/AppData/Model/tipos.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1452">
+          <caret line="49" column="17" lean-forward="false" selection-start-line="49" selection-start-column="17" selection-end-line="49" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adogcatme/Views/tipos/agregar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="3" column="75" lean-forward="false" selection-start-line="3" selection-start-column="75" selection-end-line="3" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adogcatme/Views/tipos/modificar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3861">
+          <caret line="117" column="8" lean-forward="true" selection-start-line="117" selection-start-column="8" selection-end-line="117" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adogcatme/Views/animal/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4785">
+          <caret line="145" column="4" lean-forward="true" selection-start-line="145" selection-start-column="4" selection-end-line="145" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adogcatme/Views/tipos/tabla.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="10" column="28" lean-forward="true" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+          <folding>
+            <marker date="1544020308541" expanded="true" signature="148:192" ph="..." />
+            <marker date="1544020308541" expanded="false" signature="178:191" ph="..." />
+            <marker date="1544020308541" expanded="true" signature="368:1195" ph="..." />
+            <marker date="1544020308541" expanded="true" signature="727:1148" ph="..." />
+            <marker date="1544020308541" expanded="true" signature="877:913" ph="..." />
+            <marker date="1544020308541" expanded="true" signature="983:1030" ph="..." />
+            <marker date="1544020308541" expanded="true" signature="1085:1130" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adogcatme/Views/inicio/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1419">
+          <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adogcatme/Views/Template.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1518">
+          <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adogcatme/Views/quienessomos/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adogcatme/AppData/Config/Enrutador.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="40" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adogcatme/AppData/Config/Request.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="57" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
