@@ -188,7 +188,7 @@
             $.get("<?php echo URL?>animales/modificar1/"+id,function(res){
                 var datos=JSON.parse(res);
                 console.log(res);
-                $("#id").val(datos["id"]);
+                $("#id").val(datos["id_animal"]);
                  $("#nombre").val(datos["nombre"]);
                  $("#edad").val(datos["edad"]);
                  $("#color").val(datos["color"]);

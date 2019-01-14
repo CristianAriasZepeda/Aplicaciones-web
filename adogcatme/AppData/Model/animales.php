@@ -70,7 +70,7 @@ class animales
         return $datos;
     }
     function update(){
-        $stm=$this->conexion->proc2($this->nombre,$this->edad,$this->color,$this->raza,$this->sexo,$this->especie,$this->img,$this->id_animal);
+        $stm=$this->conexion->proc2($this->nombre,$this->edad,$this->color,$this->id_raza,$this->id_sexo,$this->id_especie, $this->img, $this->id_animal);
     }
     function grafica(){
 

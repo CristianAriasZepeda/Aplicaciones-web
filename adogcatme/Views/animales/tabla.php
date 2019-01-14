@@ -1,6 +1,6 @@
 <?php
-$dato=$datos[1];
-$dato=$datos[2];
+/*$dato=$datos[1];
+$dato=$datos[2];*/
 $dato=$datos[3];
 while($row=mysqli_fetch_array($dato))
 {

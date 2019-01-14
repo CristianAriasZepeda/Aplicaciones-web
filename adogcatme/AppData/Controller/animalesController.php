@@ -60,8 +60,8 @@ class animalesController
     { 
         $this->animales->delete($id[0]);
         $datos1=$this->animales->getAll();
-        $datos[0]=$datos1;
-        return $datos;   
+        $datos[3]=$datos1;
+        return $datos;
 
     }
 
@@ -91,14 +91,15 @@ class animalesController
         {
             $nombre=$_FILES['imagen']['name'];
             $tmp=$_FILES['imagen']['tmp_name'];
+            print_r($_POST);
             $bytes=file_get_contents($tmp);
-            $this->animales->set('id',$_POST["id"]);
+            $this->animales->set('id_animal',$_POST["id"]);
             $this->animales->set('nombre',$_POST["nombre"]);
             $this->animales->set('edad',$_POST["edad"]);
             $this->animales->set('color',$_POST["color"]);
-            $this->animales->set('id_raza',$_POST["id_raza"]);
-            $this->animales->set('id_sexo',$_POST["id_sexo"]);
-            $this->animales->set('id_especie',$_POST["id_especie"]);
+            $this->animales->set('id_raza',$_POST["raza"]);
+            $this->animales->set('id_sexo',$_POST["sexo"]);
+            $this->animales->set('id_especie',$_POST["especie"]);
             $this->animales->set('img',$bytes);
             $this->animales->update();
             header("Location:".URL."animales");
