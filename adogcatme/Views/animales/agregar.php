@@ -90,7 +90,7 @@
                     </div>
                 </div>
             </div><div class="row justify-content-md-center">
-                   <button  class="btn btn-primary " id="enviar"  type="submit">Enviar</button>
+                   <button  class="btn btn-outline-danger text-dark" id="enviar"  type="submit">Enviar</button>
                </div>
            </form>
         </div>

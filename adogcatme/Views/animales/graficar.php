@@ -61,7 +61,7 @@
                      }
              },
          series: [{
-             name: 'Imagenes',
+             name: 'Animales machos',
                  data: <?php echo json_encode($vary)?>
          }]
      });

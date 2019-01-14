@@ -14,7 +14,7 @@ class inicioController
     private $tipos,$raza, $sexo,  $especie;
     public function __construct()
     {
-        $this->tipos= new \AppData\Model\tipos();
+        $this->tipos= new \AppData\Model\animales();
         $this->raza=new \AppData\Model\razas();
         $this->sexo=new \AppData\Model\sexo();
         $this->especie=new \AppData\Model\especies();

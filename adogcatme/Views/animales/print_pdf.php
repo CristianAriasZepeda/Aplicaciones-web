@@ -1,63 +1,85 @@
 <?php
-require('Public/fpdf/fpdf.php');
-class PDF extends FPDF
-{
+/**
+ * Created by PhpStorm.
+ * User: VALERIA
+ * Date: 14/06/2018
+ * Time: 11:44 AM
+ */
 
-	function Header()
-	{   date_default_timezone_set('America/Mexico_City');
-	    $this->SetFont('Arial','B',15); 
-	    $this->Cell(80); 
-	    $this->Cell(30,10,'Turismo Donato Duerra',0,0,'C'); 
-	    $this->SetFont('Arial','I',10);
-	    $this->Ln();
-	   	$this->Cell(190,10,URL,0,0,'C'); 
-	    $this->Ln();
-		$this->Cell(190,7,'Reporte generado el '.date('d/m/Y').' a las '.date('h:i:s').' por: '.$_SESSION["nombre"],0,0,'C');	    
-	}
-	function Footer()
-	{
-	    $this->SetY(-25);
-	    $this->SetFont('Arial','I',11);	
-		$this->Cell(0,2,'51030- Villa Donato guerra (Malacatepec) Estado de mexico',0,0,'C');	
-		$this->ln();	
-		$this->SetFont('Arial','I',9);	
-	    $this->Cell(0,10,'Page '.$this->PageNo().'/{nb}',0,0,'C');
-	}	
-}
-
-$pdf = new PDF();
-$pdf->AliasNbPages();
+$pdf = new \AppData\Config\libs\fpdf\FPDF();
 $pdf->AddPage();
-$pdf->SetFont('Arial','I',12);
 
+$pdf->Cell(2);
+$pdf->Image('AppData\Config\libs\fpdf\logo.jpg','60','10','15','15','JPG','http://localhost/aplicaciones-web/adogcatme/');
+$pdf->Image('AppData\Config\libs\fpdf\logo.jpg','140','10','15','15','JPG','http://localhost/aplicaciones-web/adogcatme/');
+
+$pdf->Ln();
+$pdf->SetFont('Arial','B',16);
+$pdf->Cell(190,10,'ADOPTA, NO COMPRES',0,0,'C');
+$pdf->ln();
 $pdf->ln();
 
+$pdf->SetFont('Arial','B',10);
+$pdf->SetTextColor('0','0','0');
+$pdf->SetX(15);
+$pdf->Cell(0,8,utf8_decode('ADOGCATME'),0,0,'L');
+$pdf->SetFillColor(255,255,255);
+$pdf->SetTextColor(0,0,0);
+$pdf->SetFont('Arial','B',10);
+$pdf->SetX(125);
+$pdf->Cell(45,10,utf8_decode('Fecha'),1,0,'C','true');
+$pdf->Cell(20,10,utf8_decode('14-01-2019'),1,0,'C', 'true');
 $pdf->ln();
+
+$pdf->SetFont('Arial','B',10);
+$pdf->SetTextColor('0','0','0');
+$pdf->SetX(15);
+$pdf->Cell(0,8,utf8_decode('Reporte'),0,0,'L');
+$pdf->SetFillColor(255,255,255);
 $pdf->ln();
+
+$pdf->SetFont('Arial','B',10);
+$pdf->SetTextColor('0','0','0');
+$pdf->SetX(15);
+$pdf->Cell(0,8,utf8_decode('Lista de animales en adopción'),0,0,'L');
+$pdf->SetFillColor(255,255,255);
+$pdf->SetTextColor(0,0,0);
+$pdf->SetFont('Arial','B',10);
+$pdf->SetX(125);
+$pdf->Cell(35,10,utf8_decode('Generado'),1,0,'C','true');
+$pdf->Cell(40,10,utf8_decode('jazi9610@hotmail.com'),1,0,'C', 'true');
 $pdf->ln();
-$pdf->SetFont('Arial','BI',9);
-$pdf->Cell(190,10,'Contenido',0,0,'C');
 $pdf->ln();
 $pdf->SetFillColor(255,255,255);
-$pdf->SetFont('Arial','',9);
-$pdf->SetX(10);
-$cont=1;
+$pdf->SetTextColor(0,0,0);
+$pdf->SetFont('Arial','B',10);
+$pdf->SetX(35);
+$pdf->Cell(25,10,utf8_decode('Nombre'),1,0,'C','true');
+$pdf->Cell(25,10,utf8_decode('Edad'),1,0,'C', 'true');
+$pdf->Cell(25,10,utf8_decode('Color'),1,0,'C', 'true');
+$pdf->Cell(25,10,utf8_decode('Raza'),1,0,'C', 'true');
+$pdf->Cell(25,10,utf8_decode('Sexo'),1,0,'C', 'true');
+$pdf->Cell(25,10,utf8_decode('Especie'),1,0,'C', 'true');
+$pdf->SetFillColor(255,255,255);
+$pdf->SetTextColor(0,0,0);
+$pdf->SetFont('Arial','B',8);
 while($row=mysqli_fetch_row($datos))
 {
-
-    // $pdf->SetX();
-    $pdf->Cell(25,10,utf8_decode('No.'.$cont)    ,1,0,'C','true');
-    $pdf->Cell(165,10,utf8_decode('Titulo:  '.($row[1]))    ,1,0,'C','true');
     $pdf->ln();
-    $pdf->Cell(40,10,utf8_decode('Fecha:  '.($row[2]))    ,1,0,'C','true');
-    $pdf->Cell(40,10,utf8_decode('Tipos:  '.($row[5])),1,0,'C','true');
-    $pdf->Cell(110,10,utf8_decode('Ubicacion:  '.($row[6])),1,0,'C','true');
-	$pdf->ln();
-    $pdf->Cell(190,10,utf8_decode('Descripcion:'),1,0,'C','true');
-    $pdf->ln();    
-    $pdf->Cell(190,10,utf8_decode(($row[4])),1,0,'C','true');
-    $pdf->ln();
-    $pdf->ln();
-    $cont++;
+    $pdf->SetX(35);
+    $pdf->Cell(25,10,utf8_decode($row[1]),1,0,'C');
+    $pdf->Cell(25,10,utf8_decode($row[2]),1,0,'C');
+    $pdf->Cell(25,10,utf8_decode($row[3]),1,0,'C');
+    $pdf->Cell(25,10,utf8_decode($row[4]),1,0,'C');
+    $pdf->Cell(25,10,utf8_decode($row[5]),1,0,'C');
+    $pdf->Cell(25,10,utf8_decode($row[6]),1,0,'C');
 }
+
+//Footer
+$pdf->SetY(272);
+$pdf->SetFont('Arial','I',8);
+$pdf->Cell(0,2,'Creado por Adogcatme, adopta, no compres.',0,0,'C');
+
+
 $pdf->Output();
+

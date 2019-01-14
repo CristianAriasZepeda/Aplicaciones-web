@@ -7,9 +7,9 @@
             <h1 class="h2">Animales en adopción</h1>
             <div class="btn-toolbar mb-2 mb-md-0">
               <div class="btn-group mr-2">
-                <a class="nav-link btn btn-sm btn-outline-secondary" href="<?php echo URL ?>animales/agregar">Agregar</a>
-                <button class="nav-link btn btn-sm btn-outline-secondary imp" target="_blank" href="#">Imprimir</button> 
-                <button type="button"  id="out" class="btn btn-primary" data-toggle="modal" >grafica</button>
+                <a class="nav-link btn btn-sm btn-outline-secondary text-dark" href="<?php echo URL ?>animales/agregar">Agregar</a>
+                <button class="nav-link btn btn-sm btn-outline-secondary text-dark imp" target="_blank" href="#">Imprimir</button>
+                <button type="button"  id="out" class="btn btn-outline-warning text-dark" data-toggle="modal" >Grafica</button>
                 
                 
               </div>
@@ -134,7 +134,7 @@
                 <br>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-                    <button  class="btn btn-primary " id="enviar" type="submit">Enviar</button>
+                    <button  class="btn btn-outline-danger " id="enviar" type="submit">Enviar</button>
                   </div>
                 </form>                        
         </div>

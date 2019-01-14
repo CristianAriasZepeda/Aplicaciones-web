@@ -8,7 +8,7 @@ while($row=mysqli_fetch_array($dato))
 
 		<div class='col-sm'>
 			<div class='card' style='width: 20rem;'>"
-    ?><img class='card-img-top' alt='Card image cap' src='data:image/jpg; base64, <?php echo base64_encode($row[4]); ?>'/><?php echo"
+    ?><img class='card-img-top' alt='Card image cap' width="200" height="200" src='data:image/jpg; base64, <?php echo base64_encode($row[4]); ?>'/><?php echo"
     	            <div class='card-body' >
 	              	<h6 class='card-title'>{$row[1]}</h6>	
 	              	<h6 class='card-title'>{$row[2]}</h6> 
@@ -17,10 +17,10 @@ while($row=mysqli_fetch_array($dato))
 	              	<h6 class='card-title'>{$row[6]}</h6> 
 	              	<h6 class='card-title'>{$row[7]}</h6>         
 		          	 <div>
-		             	<button type='button' class='btn btn-primary' data-toggle='modal' id='cut'  data-id='{$row[0]}'>Eliminar       		
+		             	<button type='button' class='btn btn-outline-danger text-dark' data-toggle='modal' id='cut'  data-id='{$row[0]}'>Eliminar       		
 		             	</button>
-		             	<button type='button' class='btn btn-primary' data-toggle='modal' id='out'  data-id='{$row[0]}'>
-                  			modificar
+		             	<button type='button' class='btn btn-outline-success text-dark' data-toggle='modal' id='out'  data-id='{$row[0]}'>
+                  			Modificar
                 		</button>                
 		             </div> 		              		        
 	            </div>

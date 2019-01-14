@@ -29,6 +29,7 @@ class Template
             <script src="<?php echo URL?>Public/js/jquery.min.js"></script>
             <script src="<?php echo URL?>Public/js/bootstrap.min.js"></script>
             <script src="<?php echo URL?>Public/js/sweetalert.min.js" type="text/javascript"></script>
+
         </head>
 
         <?php if(!isset($_SESSION["nombre"])) { ?>
@@ -71,8 +72,7 @@ class Template
                     </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0 text-white" type="submit">Buscar</button>
+
                     <div class="col align-self-center">
                         <a href="<?php echo URL  ?>Login" >
                             <img src="<?php echo URL?>Public/imagenes/user.svg" alt="ok" width="40" heigh="40" class="img-raised  img-fluid">
@@ -114,9 +114,7 @@ class Template
                     <li class="nav-item active">
                         <a class="nav-link" href="<?php echo URL?>especies" class="black-text">Especies</a>
                     </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="<?php echo URL?>" class="black-text">Registros</a>
-                    </li>
+
                 </ul>
                 <div class="btn-group dropleft" style="margin-right:12%;">
                     <a class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

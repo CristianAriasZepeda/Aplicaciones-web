@@ -38,6 +38,20 @@ class animales
         return $datos;
 
     }
+    function getAll2()
+    {
+        $sql="SELECT animal.id_animal, animal.nombre, animal.edad, animal.color, razas.raza_des,
+ 					sexos.sexo_des, especies.especies_des
+ 					FROM animal,sexos,especies,razas 
+ 					WHERE estado_animal=0
+ 					AND animal.id_raza=razas.id_raza 
+ 					AND animal.id_sexo=sexos.id_sexo 
+ 					AND animal.id_especie=especies.id_especie
+ 					ORDER BY id_animal ASC";
+        $datos=$this->conexion->queryResultados($sql);
+        return $datos;
+
+    }
     
     function add()
     {
@@ -73,7 +87,11 @@ class animales
         $stm=$this->conexion->proc2($this->nombre,$this->edad,$this->color,$this->id_raza,$this->id_sexo,$this->id_especie, $this->img, $this->id_animal);
     }
     function grafica(){
+        $sql="select sexo_des, count(sexos.sexo_des) from sexos, animal where sexo_des='macho' and animal.id_sexo=sexos.id_sexo;";
 
+        $datos=$this->conexion->queryResultados($sql);
+        return $datos;
 
     }
+
 }

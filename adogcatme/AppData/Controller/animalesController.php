@@ -110,7 +110,7 @@ class animalesController
     }
     public function print_pdf()
     {
-        $datos=$this->animales->getAll();
+        $datos=$this->animales->getAll2();
         return $datos;
     }
     public function graficar()
@@ -118,5 +118,6 @@ class animalesController
         $datos=$this->animales->grafica();
         return $datos;
     }
+
 
 }
